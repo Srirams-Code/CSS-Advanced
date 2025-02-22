@@ -1,0 +1,38 @@
+*{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.item-2,.item-1,.item-3{
+    background-color: rgb(148, 148, 238);
+    padding: 1rem;
+    margin: 1rem;
+    display: grid;
+    place-items: center;
+
+}
+
+.grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.item-1{
+    grid-column: 1/-1;
+    grid-row: 1/3;
+}
+
+.item-2 , .item-5{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item-8{
+    grid-column: span 3;
+}
